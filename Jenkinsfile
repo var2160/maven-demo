@@ -13,8 +13,8 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echo "War file deployed successfully"
-            }
+                bat "copy C:\Program Files (x86)\Jenkins\\workspace\deployment using pipeline\gameoflife-web\target\*.war C:\Tools\Apache\webapps
+                }
         }
     }
 }
