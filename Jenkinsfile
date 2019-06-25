@@ -10,7 +10,7 @@ pipeline {
         stage('Deploy') { 
             steps {
                  echo "deployment started"
-                 bat 'xcopy "C:\\Program Files (x86)\\Jenkins\\workspace\\MVN pipeline deploy from SCM\\maven-demo\\gameoflife-web\\target\\gameoflife.war" "C:\\Tools\\Apache\\webapps"'
+                 bat 'xcopy "C:\\Program Files (x86)\\Jenkins\\workspace\\MVN pipeline deploy from SCM\\gameoflife-web\\target\\gameoflife.war" "C:\\Tools\\Apache\\webapps"'
                  echo "**************Deployment Completed****************"
             }
         }
